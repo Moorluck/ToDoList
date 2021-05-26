@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="app_title">ToDo App</string>
+    <string name="btn_main_add">Ajouter une tâche</string>
+    <string name="btn_main_delete_all">Tout supprimer</string>
+    <string name="tv_main_list">Liste des tâches :</string>
+    <string name="priority_high_string">Urgent</string>
+    <string name="priority_medium_string">Moyenne</string>
+    <string name="priority_low_string">Basse</string>
+    <string name="toast_newtask_string">Donnez un nom à votre tâche !</string>
+    <string name="alert_dialog_delete_message">Voulez-vous vraiment supprimer toutes vos tâches ?</string>
+    <string name="alert_dialog_main_positive_answer">Oui</string>
+    <string name="alert_dialog_main_negative_answer">Non</string>
+    <string name="alert_dialog_title">!!!</string>
+    <string name="btn_item_task">Fait</string>
+    <string name="btn_newtask_validate">Valider</string>
+    <string name="tv_newtask_subtitle">Ajouter une nouvelle tâche</string>
+    <string name="tv_newtasl_name">Nom :</string>
+    <string name="hint_newtask_name">Votre tâche</string>
+    <string name="tv_newtask_priority">Priorité :</string>
+</resources>

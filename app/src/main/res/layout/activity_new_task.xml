@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewTaskActivity">
+
+    <TextView
+        android:id="@+id/tv_newtask_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/app_title"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_newtask_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tv_newtask_subtitle"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_newtask_title" />
+
+    <TextView
+        android:id="@+id/tv_newtask_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/tv_newtasl_name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/et_newtask_name"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_newtask_sub_title" />
+
+    <EditText
+        android:id="@+id/et_newtask_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_newtask_name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_newtask_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_newtask_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_newtask_name" />
+
+    <TextView
+        android:id="@+id/tv_newtask_priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/tv_newtask_priority"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_newtask_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_newtask_name" />
+
+    <Spinner
+        android:id="@+id/spinner_newtask_priority"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_newtask_priority"
+        app:layout_constraintEnd_toEndOf="@+id/et_newtask_name"
+        app:layout_constraintStart_toStartOf="@+id/et_newtask_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_newtask_priority" />
+
+    <Button
+        android:id="@+id/btn_newtask_validate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/btn_color"
+        android:backgroundTintMode="src_over"
+        android:text="@string/btn_newtask_validate"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_newtask_priority"
+        app:layout_constraintStart_toStartOf="@+id/tv_newtask_priority"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_newtask_priority" />
+</androidx.constraintlayout.widget.ConstraintLayout>
