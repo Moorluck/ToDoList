@@ -41,14 +41,4 @@ public class Convert {
                 throw new RuntimeException("Impossible de convertir la priorité");
         }
     }
-
-    public static String convertLongToDateString(long l) {
-
-        Date date = new Date(l);
-
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.FRANCE);
-
-        return dateFormat.format(date);
-
-    }
 }

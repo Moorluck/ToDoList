@@ -61,7 +61,6 @@ public class MainActivity extends AppCompatActivity implements TaskAdapter.ListI
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
             builder.setCancelable(true);
-            builder.setTitle(R.string.alert_dialog_title);
             builder.setMessage(R.string.alert_dialog_delete_message);
             builder.setPositiveButton(R.string.alert_dialog_main_positive_answer, (dialog, which) -> {
                 db.openWritable().deleteAll();
@@ -102,9 +101,24 @@ public class MainActivity extends AppCompatActivity implements TaskAdapter.ListI
 
     @Override
     public void onBtnItemClickListener(long taskId) {
-        db.openWritable().delete(taskId);
 
-        updateList();
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        builder.setCancelable(true);
+        builder.setMessage(R.string.alert_finish_task);
+        builder.setPositiveButton(R.string.alert_dialog_main_positive_answer, (dialog, which) -> {
+            db.openWritable().delete(taskId);
+            updateList();
+            dialog.cancel();
+        });
+
+        builder.setNegativeButton(R.string.alert_dialog_main_negative_answer, (dialog, which) -> {
+            dialog.cancel();
+        });
+
+        AlertDialog alertDialog = builder.create();
+
+        alertDialog.show();
     }
 
     private void updateList() {

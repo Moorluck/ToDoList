@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_main_add">Add a task</string>
+    <string name="btn_main_delete_all">Delete all</string>
+    <string name="tv_main_list">Task list :</string>
+    <string name="priority_high_string">High</string>
+    <string name="priority_medium_string">Medium</string>
+    <string name="priority_low_string">Low</string>
+    <string name="toast_newtask_string">Name your task</string>
+    <string name="alert_dialog_delete_message">Are you sure you want to delete all your tasks ?</string>
+    <string name="alert_dialog_main_positive_answer">Yes</string>
+    <string name="alert_dialog_main_negative_answer">No</string>
+    <string name="btn_item_task">Done</string>
+    <string name="btn_newtask_validate">Validate</string>
+    <string name="tv_newtask_subtitle">Add a new task</string>
+    <string name="tv_newtasl_name">Name :</string>
+    <string name="hint_newtask_name">Your task</string>
+    <string name="tv_newtask_priority">Priority :</string>
+    <string name="alert_finish_task">Have you finished this task ?</string>
+</resources>
